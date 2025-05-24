@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^usuarios(.*)$ index.php?pagina=usuarios [L]
+RewriteRule ^grupo_acessos(.*)$ index.php?pagina=grupo_acessos [L]
+RewriteRule ^acessos(.*)$ index.php?pagina=acessos [L]
+RewriteRule ^vendas_diarias_pagina(.*)$ index.php?pagina=vendas_diarias_pagina [L]
+RewriteRule ^vendas_mensais_pagina(.*)$ index.php?pagina=vendas_mensais_pagina [L]
+RewriteRule ^vendas_anuais_pagina(.*)$ index.php?pagina=vendas_anuais_pagina [L]
+RewriteRule ^comparativo_vendas_mensais(.*)$ index.php?pagina=comparativo_vendas_mensais [L]
+RewriteRule ^comparativo_vendas_anuais(.*)$ index.php?pagina=comparativo_vendas_anuais [L]
+RewriteRule ^evolutivo_vendas(.*)$ index.php?pagina=evolutivo_vendas [L]
